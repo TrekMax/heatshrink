@@ -1,0 +1,13 @@
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+    set(CMAKE_INSTALL_PREFIX "/usr/local")
+endif()
+
+file(REMOVE_RECURSE
+    "${CMAKE_INSTALL_PREFIX}/bin/heatshrink"
+    "${CMAKE_INSTALL_PREFIX}/lib/libheatshrink_static.a"
+    "${CMAKE_INSTALL_PREFIX}/lib/libheatshrink_dynamic.a"
+    "${CMAKE_INSTALL_PREFIX}/include/heatshrink_common.h"
+    "${CMAKE_INSTALL_PREFIX}/include/heatshrink_config.h"
+    "${CMAKE_INSTALL_PREFIX}/include/heatshrink_encoder.h"
+    "${CMAKE_INSTALL_PREFIX}/include/heatshrink_decoder.h"
+)

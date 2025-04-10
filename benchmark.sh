@@ -27,7 +27,7 @@ for W in 6 7 8 9 10 11 12; do
     for L in 5 6 7 8; do
         if [ $L -lt $W ]; then
             for f in ${FILES}
-            do 
+            do
                 IN_FILE="${f}"
                 COMPRESSED_FILE="${f}.hsz.${W}_${L}"
                 UNCOMPRESSED_FILE="${f}.orig.${W}_${L}"
@@ -38,7 +38,7 @@ for W in 6 7 8 9 10 11 12; do
                 if [ $(ls -l ${IN_FILE} | awk '{print($5)}') != $(ls -l ${UNCOMPRESSED_FILE} | awk '{print($5)}') ];
                 then
                     printf "\n\n\nWARNING: size of %s does not match size of %s\n\n\n" \
-			${IN_FILE} ${UNCOMPRESSED_FILE}
+            ${IN_FILE} ${UNCOMPRESSED_FILE}
                 else
                     printf "pass: -w %2d -l %2d  %s\n" ${W} ${L} "${f}"
                 fi

@@ -1,5 +1,9 @@
 # heatshrink
 
+English: [![English](https://img.shields.io/badge/lang-english-blue.svg)](README.md)
+
+简体中文: [![简体中文](https://img.shields.io/badge/lang-chinese-red.svg)](README.zh.md)
+
 A data compression/decompression library for embedded/real-time systems.
 
 
